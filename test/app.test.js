@@ -26,7 +26,8 @@ describe('app routes', () => {
       .then(res => {
         expect(res.body).toEqual({
           _id: expect.any(String),
-          username: 'test'
+          username: 'test',
+          urls: []
         });
       });
   });
@@ -39,7 +40,8 @@ describe('app routes', () => {
 
     expect(res.body).toEqual({
       _id: expect.any(String),
-      username: 'test'
+      username: 'test',
+      urls: []
     });
   });
 
